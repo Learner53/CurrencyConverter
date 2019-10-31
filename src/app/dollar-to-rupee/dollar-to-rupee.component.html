@@ -1,0 +1,7 @@
+
+<div class="container">
+    <h3>Dollar to Rupee Converter</h3>
+  <input type="number" [(ngModel)]="dollar" (input)="getDollarInput($event)" placeholder="Enter Dollar curency to convert it into rupee"><br><br>
+  <p *ngIf="hideIt"> <span class="dollar">{{dollar  | currency: 'USD'}} </span><span 
+  > Equals </span><span [(ngModel)]="rupee" class="rupee"> {{ rupee  | currency: 'INR'}}</span></p>
+  </div>
